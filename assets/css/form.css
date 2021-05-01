@@ -1,0 +1,18 @@
+form{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+}
+form input[type=text],
+form input[type=password],
+form input[type=email]{
+width: 100%;
+border: 1px solid #ccc;
+margin: 5px 0;
+}
+form input[type=submit]{
+    width: 40%;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid;
+    
+}
