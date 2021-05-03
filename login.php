@@ -23,7 +23,7 @@ $pass = md5($_POST['senha']);
         $nomeConectado = $_SESSION["logado"]["nome"];
         setcookie("login",$login);
         echo"<script language='javascript' type='text/javascript'>
-        window.location.href='painelAdm.html';</script>";
+        window.location.href='painelAdmOld.php';</script>";
       }
   }
 ?>

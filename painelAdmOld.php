@@ -61,7 +61,7 @@
               <span></span>
               <span></span>
             </button>
-                            <span class="menu-text">Login</span>
+                            <span class="menu-text">Menu</span>
                         </div>
                     </div>
                     <!-- Hamburger Menu Start -->
@@ -115,12 +115,11 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-11 col-xl-10 m-auto">
                             <div class="slider-content-area" data-aos="fade-up">
-                                <?php $param = "test"; ?>
-                                <h2>Painel</h2>
-                                <form action="painelAdm.php" method="POST" enctype="multipart/form-data">
-                                    <input type="hidden" name="MAX_FILE_SIZE" value="*" /> Enviar esse arquivo: <input name="userfile" type="file" accept="image/*" />
-                                    <input type="submit" value="Enviar Imagem" />
-                                </form>
+                                <div id="telaCentral">
+
+
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -194,7 +193,7 @@
                         <!-- Start Asside Menu Wrapper -->
                         <div class="asside-navigation-area ">
                             <ul class="asside-menu nav " id="assideMenuNav ">
-                                <li><a href="index.html ">Efetuar Login</a></li>
+                                <li><a id="upload">Enviar medias</a></li>
                                 <!-- <li class="dropdown-submenu " id="submenuOne ">
                 <a class="collapsed " href="portfolio.html " data-bs-toggle="collapse " data-bs-target="#collapseOne " aria-controls="collapseOne "><span>Portfolio</span></a>
                 <ul class="dropdown-nav collapse " id="collapseOne " aria-labelledby="submenuOne " data-bs-parent="#assideMenuNav ">
@@ -202,7 +201,7 @@
                   <li><a href="portfolio-details.html ">Portfolio Details</a></li>
                 </ul>
               </li> -->
-                                <li><a href="login.html ">Cadastre-se</a></li>
+                                <li><a id="media">Minhas medias</a></li>
                                 <!-- <li><a href="contact.html ">Contact</a></li>
               <li class="dropdown-submenu " id="submenuTwo ">
                 <a class="collapsed " href="blog.html " data-bs-toggle="collapse " data-bs-target="#collapseTwo " aria-controls="collapseTwo "><span>Blog</span></a>
@@ -247,5 +246,13 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/alexis/alexis/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Apr 2021 22:19:54 GMT -->
+<script>
+    $('#upload').click(function() {
+        $('#telaCentral').load('upload.php');
+    });
+    $('#media').click(function() {
+        $('#telaCentral').load('upload.php');
+    });
+</script>
 
 </html>
